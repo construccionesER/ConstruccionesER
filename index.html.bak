@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construcciones E.R - Cielo Rasos en PVC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E50914',
+                    },
+                    fontFamily: {
+                        anton: ['Anton', 'Impact', 'sans-serif'],
+                        bebas: ['"Bebas Neue"', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('foto1.avif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #FFFFFF;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="font-inter antialiased flex flex-col min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 w-full z-50 px-6 py-6 md:px-12 flex items-center justify-between bg-black/80 backdrop-blur-sm border-b border-white/10">
+        <!-- Left: Links -->
+        <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-widest text-white/70">
+            <a href="#" class="hover:text-white transition-colors duration-300">TRABAJOS</a>
+            <a href="#" class="hover:text-white transition-colors duration-300">SERVICIOS</a>
+            <a href="#" class="hover:text-white transition-colors duration-300">NOSOTROS</a>
+            <a href="#" class="hover:text-white transition-colors duration-300">BLOG</a>
+        </nav>
+
+        <!-- Center: Logo -->
+        <div class="absolute left-1/2 -translate-x-1/2">
+            <a href="#" class="inline-block hover:scale-105 transition-transform duration-300">
+                <img src="logo2-sinfondo.png" alt="Logo Construcciones E.R" class="h-28 md:h-40 w-auto object-contain">
+            </a>
+        </div>
+
+        <!-- Right: Email, CTA, Menu -->
+        <div class="flex items-center gap-6 ml-auto lg:ml-0">
+            <a href="mailto:contacto@cielorasoser.com" class="hidden md:block text-sm text-white/70 hover:text-white transition-colors">
+                contacto@cielorasoser.com
+            </a>
+            <a href="#" class="hidden sm:inline-block bg-primary text-white text-xs font-bold px-6 py-3 rounded-none uppercase tracking-wider hover:bg-red-700 transition-colors duration-300">
+                COTIZAR AHORA
+            </a>
+            <button class="text-white hover:text-primary transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-grow flex items-end justify-start pb-8 md:pb-16 pt-28 px-6 md:px-12">
+        <div class="text-left w-full max-w-[95vw] flex flex-col items-start justify-end">
+            
+            <!-- Line 1 -->
+            <div class="flex items-center justify-start leading-[0.85] whitespace-nowrap">
+                <h1 class="font-anton text-3xl sm:text-5xl md:text-8xl lg:text-[10rem] xl:text-[12rem] text-white tracking-tight m-0 leading-[0.85]">
+                    CIELO RASOS EN PVC
+                </h1>
+            </div>
+
+            <!-- Line 2 -->
+            <h1 class="font-anton text-3xl sm:text-5xl md:text-8xl lg:text-[10rem] xl:text-[12rem] text-primary tracking-tight leading-[0.85] mt-1 md:mt-2 whitespace-nowrap">
+                CONSTRUCCIONES E.R
+            </h1>
+
+        </div>
+    </main>
+
+</body>
+</html>

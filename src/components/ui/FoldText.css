@@ -1,0 +1,34 @@
+.fold-text {
+  display: inline-block;
+  font-size: var(--fold-text-font-size);
+  font-weight: var(--fold-text-font-weight);
+  color: var(--fold-text-color);
+}
+
+.fold-text-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.fold-text-visual {
+  display: inline;
+}
+
+.fold-text-segment {
+  display: inline-block;
+  perspective: var(--fold-perspective);
+  transform-style: preserve-3d;
+}
+
+.fold-text-piece {
+  display: inline-block;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+}
